@@ -1,7 +1,8 @@
 #!/bin/sh
 set -e
 
-find . -mindepth 1 -maxdepth 1 -type d | \
+cd "$(dirname "$0")"
+find gap-packages others -mindepth 1 -maxdepth 1 -type d | \
 parallel --bar --jobs 0 '
   cd {} &&
   if ! git pull --ff-only > /dev/null 2>&1; then

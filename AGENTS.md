@@ -2,8 +2,18 @@
 
 This repository contains a Python script for bulk-editing many local GAP package repository clones.
 
+Layout:
+- `gap-packages/` holds the clones of the repositories of the gap-packages
+  GitHub organisation (`clone-gap-packages.py`).
+- `others/` holds the clones of the other distributed GAP packages hosted on
+  GitHub, listed in `others-repos.txt` (`clone-others.py`; regenerate the list
+  from PackageDistro with `list-other-repos.py`). We cannot push to these:
+  changes always go to a fork and through a pull request.
+- `update.sh` pulls all clones of both directories.
+
 Typical usage context:
-- The script is run from a directory containing many git repository clones.
+- The script is run from a directory containing many git repository clones,
+  i.e. from inside `gap-packages/` or `others/`.
 - Each subdirectory that contains `.git` is treated as one repository.
 - The script edits workflow files in those repositories, commits changes, and normally pushes them.
 - Operations should be safe and idempotent.

@@ -1,6 +1,7 @@
 #!/bin/sh
 set -e
 
-for d in */ ; do
+cd "$(dirname "$0")"
+for d in gap-packages/*/ others/*/ ; do
   (cd "$d" && git diff)
 done

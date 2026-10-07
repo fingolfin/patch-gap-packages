@@ -56,6 +56,9 @@ while True:
     else:
         break
 
+# the clones live in the gap-packages directory next to this script
+os.chdir(os.path.join(os.path.dirname(os.path.abspath(__file__)), "gap-packages"))
+
 for repo_name in sorted(repos):
     if repo_name in skip:
         continue
