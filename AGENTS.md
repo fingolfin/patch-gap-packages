@@ -10,6 +10,13 @@ Layout:
   from PackageDistro with `list-other-repos.py`). We cannot push to these:
   changes always go to a fork and through a pull request.
 - `update.sh` pulls all clones of both directories.
+- `pkgrepos.py` lists the clones and publishes a change to one: pushed to the
+  default branch for the packages in `push-direct.txt` (written by
+  `classify-maintainers.py` from the maintainers in each `PackageInfo.g`),
+  otherwise to a branch, for a pull request. `patchit-checkout.py` and
+  `patchit-pending-release.py` are mass changes built on it and can be run
+  from anywhere; copy one for a new change.
+- `changes-md/` holds one-off scripts of a past mass change.
 
 Typical usage context:
 - The script is run from a directory containing many git repository clones,

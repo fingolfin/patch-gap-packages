@@ -1,3 +1,11 @@
 /gap-packages/
 /others/
 __pycache__
+
+# generated while drafting release notes
+/changes-md/dossiers/
+/changes-md/skeleton/
+/changes-md/drafts/
+
+# copy of dev/releases/package_changes.py from the GAP repository
+/package-changes.py
