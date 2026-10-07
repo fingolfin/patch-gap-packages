@@ -16,6 +16,8 @@ and input files from the current directory, so they need adapting to the
   (`groupD.txt`), the releases and the commits of each; from these the notes
   were drafted and `patchit-add-changes.py` added the files.
   `check-untagged.py` and `find-hidden-changelogs.py` were checks on the way.
+- `initial-release.py` reduces the notes of a first release to "Initial
+  release"; unlike the others it works in the current layout.
 - `pr-urls*.txt` list the pull requests opened.
 
 The generated `dossiers/`, `skeleton/` and `drafts/` are not tracked.
