@@ -8,18 +8,22 @@ DeepThought
 FPLSA
 FactInt
 FinInG
+GraphvizForGAP
 InduceReduce
 JupyterKernel
+LINS
 MajoranaAlgebras
 NautyTracesInterface
 NoCK
 NormalizInterface
 PackageMaker
 PackageManager
+QuimpGrp
 RegisterPackageTNUMDemo
 SimplicialSurfaces
 SingularInterface
 SymbCompCC
+WPE
 YangBaxter
 ZeroMQInterface
 aaa
@@ -31,8 +35,10 @@ autshift
 circle
 cohomolo
 congruence
+corelg
 crime
 crypting
+cubefree
 curlInterface
 cvec
 datastructures
@@ -40,6 +46,7 @@ example
 fga
 format
 forms
+fr
 fwtree
 gbnp
 genss
@@ -47,6 +54,7 @@ grpconst
 guarana
 hapcryst
 hecke
+img
 io
 itc
 jupyterviz
@@ -54,6 +62,7 @@ kbmag
 laguna
 liealgdb
 liering
+lpres
 modisom
 nq
 openmath
