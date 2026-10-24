@@ -14,8 +14,13 @@ import subprocess
 # a maintainer whose name matches one of these makes a package "ours"
 OUR_MAINTAINERS = re.compile(r"^(Max Horn|The GAP Team|\w+ Konovalov) <")
 
-# repos whose PackageInfo.g lacks maintainer data
-FORCE_DIRECT = {"AttributeScheduler", "xgap"}
+# repos whose PackageInfo.g lacks maintainer data, and repos whose maintainers
+# accept direct pushes
+FORCE_DIRECT = {
+    "AttributeScheduler", "xgap",
+    "corelg", "cubefree", "fr", "GraphvizForGAP", "img", "LINS", "lpres", "QuimpGrp",
+    "WPE",
+}
 SKIP = {"certification", "ve"}
 
 TOP = Path(__file__).resolve().parent
