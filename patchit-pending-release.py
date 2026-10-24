@@ -32,7 +32,7 @@ NEW_JOB = "close-pending-release-issue"
 BRANCH = "mh-claude/check-pending-release"
 COMMIT_SUBJECT = "CI: check for pending releases"
 COMMIT_BODY = f"See <{ACTION_URL}>."
-COMMIT_TRAILER = "Assisted-by: Claude Code (Opus 5.5)"
+COMMIT_TRAILER = "Assisted-by: Generative AI"
 
 # a checkout pinned to a commit, e.g. `actions/checkout@<sha> # v7`
 PINNED_CHECKOUT = re.compile(r"actions/checkout@[0-9a-f]{40} # v\d+")

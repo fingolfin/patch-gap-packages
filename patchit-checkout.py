@@ -25,7 +25,7 @@ NEW = "actions/checkout@v7"
 
 BRANCH = "mh-claude/checkout-v7"
 COMMIT_SUBJECT = "CI: update to actions/checkout@v7"
-COMMIT_TRAILER = "Assisted-by: Claude Code (Opus 5.5)"
+COMMIT_TRAILER = "Assisted-by: Generative AI"
 # END PARTS TO EDIT
 
 
